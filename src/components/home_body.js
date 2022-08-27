@@ -1,17 +1,19 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react'
 import styled from 'styled-components'
+import background from '../Assets/background.jpg'
 
 const Home_Body = () => {
   return (
     <Container>
+        <img src={background} alt='background'></img>
         <Glass>
             <Left_Side>
                 <Body_Text>
-                    <h1>Let's Join Us.</h1>
+                    <h1>Join Us</h1>
                 </Body_Text>
                 <Sign_Button>
-                    <button>Sign Up</button>
+                    <button>SIGN UP</button>
                 </Sign_Button>
             </Left_Side>
             <Right_Side>
@@ -44,7 +46,7 @@ const Form = styled.div`
     width:90%;
     height:100%;
     input , label , button{
-        font-family:Poppins;
+        font-family:Arial;
         color:whitesmoke;
         width:95%;
         margin:10px;
@@ -98,7 +100,7 @@ const Right_Side = styled.div`
     
 
     h2{
-        font-family:Poppins;
+        font-family:Arial;
         color:whitesmoke;
         font-size:1.8rem;
         text-align:center;
@@ -113,7 +115,7 @@ const Left_Side = styled.div`
     position: relative;
     width:fit-content;
     top:40%;
-    left:10%;
+    left:20%;
     display:flex;
     flex-direction:column;
     height:200px;
@@ -129,13 +131,18 @@ const Glass = styled.div`
     left:0;
     top:0;
     z-index:999;
-    background:linear-gradient(rgba(10,1,10,100%),rgba(2,45,30,100%));
+    // background:linear-gradient(rgba(10,1,10,0.8),rgba(2,45,30,0.9));
+    background:linear-gradient(135deg ,rgba(0,45,30,0.6),rgba(10,1,10,0.9));
+    backdrop-filter:border-top-left-radius(10px);
+    -webkit-backdrop-filter:blur(1000px);
+    border:1px solid rgba(2,45,30,0.5);
+    box-shadow: 0 8px 5px 0 rgba(10,1,10,0.12);
     
 `
 
 
 const Body_Text = styled.div`
-    font-family:Poppins;
+    font-family:Arial;
     color:white;
     font-size:2.0rem;
 
@@ -147,7 +154,7 @@ const Sign_Button = styled.div`
     color:white;
     
     button{
-        font-family:Poppins;
+        font-family:Arial;
         padding:10px 30px;
         background-color:transparent;
         color:white;
@@ -174,6 +181,17 @@ const Sign_Button = styled.div`
 
 const Container = styled.div`
     z-index:997;
+    img{
+        z-index:998;
+        position:absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        height:100%;
+        width:100%;
+
+    }
 `
 
 

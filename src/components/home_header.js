@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react'
 import styled from 'styled-components'
-import Logo from '../Assets/MRC PNG.png'
+import Logo from '../Assets/Logo2.jpg'
 
 const Home_Header = () => {
   return (
@@ -38,14 +38,14 @@ const Title = styled.div`
     position: relative;
     top:-6px;
     color:whitesmoke;
-    font-family:'Poppins';
+    font-family: Arial;
     letter-spacing:2px;
     font-size:1.5rem;
     margin:0;
     padding-left:25px;
     &:after{
-        content:'Mahinda  Rajapaksha  College.';
-        bottom:-6px;
+        content:'Mahinda  Rajapaksha  College Homagama.';
+        bottom:-20px;
         position: absolute;
         font-size:1.2rem;
         color:darkgray;
